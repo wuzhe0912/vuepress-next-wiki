@@ -71,7 +71,7 @@
           <router-link
             :to="item.path"
             class="readmore iconfont icon-jiantou-you"
-          >阅读全文</router-link>
+          >Read More</router-link>
         </div>
       </div>
     </transition-group>

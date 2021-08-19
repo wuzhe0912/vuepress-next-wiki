@@ -5,7 +5,7 @@
       :class="{disabled: currentPage === 1}"
       @click="goPrex()"
     >
-      <p>上一页</p>
+      <p>Previous</p>
     </span>
 
     <!-- 分页在5页及以下时 -->
@@ -38,7 +38,7 @@
         class="ellipsis ell-two"
         v-show="currentPage > 3"
         @click="goIndex(currentPage - 2)"
-        title="上两页"
+        title="Previous"
       />
       <!--这里没有使用v-if的原因是因为部署版本在当前页大于3时刷新页面出现了一些bug-->
       <span
@@ -60,7 +60,7 @@
         class="ellipsis ell-four"
         v-show="currentPage < (pages - 2)"
         @click="goIndex(currentPage + 2)"
-        title="下两页"
+        title="Next"
       />
       <span
         class="card-box"
@@ -82,7 +82,7 @@
       :class="{disabled: currentPage === pages}"
       @click="goNext()"
     >
-      <p>下一页</p>
+      <p>Next</p>
     </span>
   </div>
 </template>

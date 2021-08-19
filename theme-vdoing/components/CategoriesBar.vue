@@ -3,8 +3,8 @@
     <router-link
       to="/categories/"
       class="title iconfont icon-wenjianjia"
-      title="全部分类"
-      >{{ length === 'all' ? '全部分类' : '文章分类' }}</router-link
+      title="All Category List"
+      >{{ length === 'all' ? 'All Category' : 'Article Category' }}</router-link
     >
 
     <div class="categories">
@@ -21,7 +21,7 @@
         to="/categories/"
         v-if="length !== 'all' && length < categoriesData.length"
         class="more"
-        >更多 ...</router-link
+        >More ...</router-link
       >
     </div>
   </div>
